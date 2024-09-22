@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        nav {
+            padding-bottom: 30px;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px 30px;
+        }
+
+        td:hover {
+            background-color: red;
+            border: 2px solid black;
+        }
+
+        td:hover a {
+            color: white;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        td a:hover {
+            text-transform: uppercase;
+            font-weight: bold;
+
+        }
+
+        iframe {
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+            width: 600px;
+            height: 600px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Fazendo uma escolha</h1>
+    <nav>
+        <table>
+            <tr>
+                <td class="primeiro"><a href="iframe003.html" target="frame">NÃO CLIQUE AQUI!</a></td>
+            <tr>
+                <td class="segundo"><a href="iframe002.html" target="frame">Segundo Link</a><br></td>
+            </tr>
+            <tr>
+                <td class="terceiro">            <a href="iframe004.html" target="frame">Terceiro Link</a><br>
+                </td>
+            </tr>
+        </table>
+    </nav>
+        <iframe id="tela" name="frame" src="" frameborder="1"></iframe>
+</body>
+</html>

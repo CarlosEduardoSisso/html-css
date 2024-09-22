@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT - Exercício Final</title>
+    <style>
+        * {
+            font-family: Helvetica, Arial, sans-serif;
+            padding: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        nav {
+            font-size: normal;
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        nav a {
+            border-radius: 20px;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a:hover {
+            background-color: lightgray;
+            font-size: 1.1em;
+            color: white;
+
+        }
+
+        nav, main, footer {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0px;
+        }
+
+        section {
+            padding-top: 30px;
+        }
+
+        .imagem {
+            background-size: cover; 
+            background-color: white;    
+        }
+
+        #apresentacao {
+            padding-top: 5vh;
+            padding-bottom: 10vh;
+            width: 100%;
+            overflow: hidden; /* Solução para evitar problemas de layout com float */
+        }
+
+        .texto-apresentacao {
+            float: left;
+            width: 45%;
+            padding-top: 50px;
+            padding-right: 10px;
+            margin-left: 100px;
+        }
+
+        #foto {
+            float: right;
+            width: 250px;
+            height: 250px;
+            margin-right: 100px;
+            border-radius: 50%;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.253);
+            box-shadow: inset 2px 0px 20px 3px rgb(255, 255, 255);
+            background-image: url("imagens/3x4.jpg");
+            background-position: auto;
+        }
+
+        #paralaxe {
+            height: 200px;
+            width: auto;
+            background-image: url("imagens/tela.jpg");
+            background-attachment: fixed;
+        }
+
+        section#conteudo {
+            display: grid; /* Define o layout como grid */
+            grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
+            gap: 10px; /* Espaço entre as colunas */
+            max-width: 100%; /*A imagem não ultrapassará o tamanho da coluna*/
+
+        }
+
+        #conteudo div.texto {
+            text-indent: 20px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        #final {
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.253);
+            background-image: url("imagens/pinguins.png");
+        }
+
+        #redes-sociais {
+            text-align: center;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <p><strong>Proposta do ChatGPT:</strong></p>
+    <p><strong>Projeto final:</strong>
+        crie uma página de portfólio fictícia, com um <strong>menu fixo no topo</strong>, uma área de apresentação com <strong>imagem de fundo</strong> e <strong>efeito parallax</strong>, uma <strong>seção de conteúdo</strong> com <strong>duas colunas</strong> (uma coluna para texto e outra para uma imagem) e <strong>um rodapé</strong> contendo <strong>links para redes sociais</strong>. A página deve ser totalmente <strong>responsiva</strong> e utilizar todas as técnicas de CSS aprendidas <strong>(variáveis, degradês, sombras, fontes externas, etc.)</strong>.</p>
+        <p><strong>Resolução:</strong></p>
+        <h1>PORTFÓLIO</h1>
+        <nav>
+            <a href="#">Quem Sou</a>
+            <a href="#">Minha História</a>
+            <a href="#">Meus Projetos</a>
+            <a href="#">Minhas Redes Sociais</a>
+        </nav>
+        <main>
+            <section id="apresentacao">
+                <div class="texto-apresentacao">
+                    <h2>Nome Completo</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis provident, accusamus sunt maiores, consectetur voluptas exercitationem consequatur omnis in dolore sint asperiores nesciunt facere nobis sit nulla quia unde necessitatibus.</p>
+                </div>
+                <div class="imagem" id="foto"></div>
+            </section>
+            <div class="imagem" id="paralaxe"></div>
+            <section id="conteudo">
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magnam sapiente debitis! Id aperiam excepturi exercitationem saepe itaque quia. Magnam sunt consectetur molestiae tempore voluptate hic. Ut beatae quasi quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente explicabo a consectetur ea doloremque! Nostrum alias sequi similique labore rerum, distinctio, aperiam facilis ab iste reprehenderit minima facere saepe?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam dolorem dicta optio expedita, exercitationem quia provident eligendi laudantium facilis vero quas veritatis placeat, possimus odit! Quos totam amet optio repellat?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis cupiditate earum asperiores distinctio ipsum. Blanditiis aliquam modi eligendi odio expedita explicabo necessitatibus, ab quas, eius ea voluptas qui corporis?
+                    </p>
+                </div>
+                <div class="imagem" id="final"></div>
+            </section>
+            <section id="redes-sociais">
+                <p>Encontre-me nas redes:</p>
+                <p>@meu-nome</p>
+                <a href="#"><img src="imagens/icone-instagram.png" alt="Ícone do Instagram"></a>
+                <a href="#"><img src="imagens/icone-youtube.png" alt="Ícone do YouTube"></a>
+                <a href="#"><img src="imagens/icone-twitter.png" alt="Ícone do Twitter"></a>
+            </section>
+        </main>
+        <footer>Desenvolvido por<a href="#">Carlos Eduardo Sisso</a></footer>
+</body>
+</html>

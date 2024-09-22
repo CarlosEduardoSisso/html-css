@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT - Exercício 004</title>
+    <style>
+        table {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            border-collapse: collapse;
+            color: rgb(18, 116, 177);
+            position: relative; /*Fixar cabeçalho no topo*/
+        }
+
+        /*Ficar cabeçalho no topo*/
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+
+        }
+
+        thead, tbody {
+
+        }
+
+        tr, th, td {
+            border: 2px solid darkblue;
+            padding: 10px;
+        }
+
+        th {
+            width: 200px;
+            background-color: lightblue;
+        }
+
+        tr:nth-child(2n) {
+            background-color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Tabelas com formatação básica</h1>
+<p><strong>Proposta do ChatGPT: </strong>Monte uma tabela com pelo menos 5 linhas e 3 colunas. Adicione uma legenda (&lt;caption&gt;), formate a tabela com CSS (cores de fundo alternadas para linhas, bordas, etc.) e faça com que o cabeçalho da tabela permaneça fixo ao rolar a página.</p>
+<p><strong>Resolução: </strong></p>
+<table>
+    <caption>
+        Tabela de Clientes
+    </caption>
+    <thead>
+        <tr>
+            <th>Nome e Sobrenome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Carlos Souza</td>
+            <td>50</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Rejane Sampaio</td>
+            <td>47</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Giovanna Sampaio</td>
+            <td>16</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Cecília Sampaio</td>
+            <td>13</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Cindy Doggy</td>
+            <td>06</td>
+            <td>Fêmea</td>
+        </tr>
+        <tr>
+            <td>Paul Pierre</td>
+            <td>64</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Lindôra Neves</td>
+            <td>38</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Maggie Rothchild</td>
+            <td>08</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Bruno Uno</td>
+            <td>28</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Ivanilda Teixeira</td>
+            <td>48</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Bella Hermione</td>
+            <td>11</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Simple Plan</td>
+            <td>45</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Gentle Thrull</td>
+            <td>44</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Slipce Man</td>
+            <td>21</td>
+            <td>Não Declarado</td>
+        </tr>
+        <tr>
+            <td>Edmilton Libério</td>
+            <td>53</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Felipe Lemos</td>
+            <td>15</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Anabelle Almada</td>
+            <td>17</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>T. J. Thomas</td>
+            <td>40</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Jo Graal</td>
+            <td>29</td>
+            <td>Não Declarado</td>
+        </tr>
+        <tr>
+            <td>Memphis Depay</td>
+            <td>28</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Lopes Sepol</td>
+            <td>33</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Pater Pen </td>
+            <td>55</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Ismaylle</td>
+            <td>30</td>
+            <td>Não Declarado</td>
+        </tr>
+        <tr>
+            <td>Dexter Lexter</td>
+            <td>32</td>
+            <td>Não Declarado</td>
+        </tr>
+        <tr>
+            <td>Emerick Soares</td>
+            <td>58</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Ilô Parubá</td>
+            <td>22</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Di Mescada</td>
+            <td>36</td>
+            <td>Masculinho</td>
+        </tr>
+        <tr>
+            <td>Aragüela</td>
+            <td>53</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Nhô Muniz</td>
+            <td>62</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Clementine Ava</td>
+            <td>32</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Fedra Silva</td>
+            <td>22</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Arlo Beirut</td>
+            <td>26</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Bob McEmily</td>
+            <td>42</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Rejane Sampaio</td>
+            <td>47</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Liam Fer</td>
+            <td>12</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Duda Duílio</td>
+            <td>19</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Vance Virgin Bohn</td>
+            <td>50</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Otacílio Alípio</td>
+            <td>51</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Dartagnan Ayala Gomez Ruiz</td>
+            <td>37</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Feijó</td>
+            <td>47</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Bruce Springfield</td>
+            <td>72</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Leminem</td>
+            <td>22</td>
+            <td>Não Declarado</td>
+        </tr>
+        <tr>
+            <td>Anabê Atriz</td>
+            <td>36</td>
+            <td>Feminino</td>
+        </tr>
+        <tr>
+            <td>Zé Pardim</td>
+            <td>60</td>
+            <td>Masculino</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="3">Tabela Construída por mim.</th>
+        </tr>
+    </tfoot>
+</table>
+<h3>EXERCÍCIO REALIZADO COM SUCESSO (e alguma consulta)!</h3>
+</body>
+</html>

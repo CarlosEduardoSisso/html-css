@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /*Configuração necessária para fixar o cabeçalho de uma tabela*/
+        }
+
+        caption {
+            color: white;
+            font-size: 1.1em;
+            font-variant: small-caps;
+            font-weight: bold;
+            padding: 5px;
+            border: 2px solid black;
+            background-color: rgb(63, 63, 63);
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        thead, tfoot {
+            background-color: rgb(99, 99, 99);
+            color: white;
+        }
+
+        /*Configuração necessária para fixar o cabeçalho de uma tabela*/
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(99, 99, 99);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(185, 185, 185);
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a manipular tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes:
+        
+        TABLE
+            - CAPTION;
+            - THEAD;
+                - TR, TD, TH;
+            - TBODY;
+                - TR, TD, TH;
+            - TFOOT (não obrigatório);
+                - TR, TD, TH;
+    -->
+    <table>
+        <caption>Lista de unidades federativas do Brasil por população</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.973.190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.322.692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.219.679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.850.513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.824.665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.229.915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.539.029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.664.306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8.058.447</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.350.483</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">4.281.209</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.281.209</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.145.040</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.102.129</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.836.399</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.446.071</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.375.646</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.220.104</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.982.815</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.901.895</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.291.077</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.746.227</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.577.342</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">880.631</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">802.837</td>
+            </tr>            
+            <tr>
+                <td>Roraima</td>
+                <td class="num">716.793</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>212.583.720</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Texto Teste</h2>
+    <h3>O texto abaixo é para testar se o cabeçalho fixado da tabela anterior some quando a tabela "some" na rolagem de tela</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eius id repellendus ut fugiat quo non error optio alias aspernatur sint facilis adipisci ex maxime sequi dolorem perferendis, doloribus architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam libero officiis minima praesentium id eos. Delectus ratione facere iusto beatae, quaerat vero provident error ipsam nesciunt! Obcaecati inventore labore vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut deserunt ducimus voluptatibus, inventore odio, dolor aspernatur molestiae ipsam ex quae fuga aperiam velit eaque dolorem amet omnis? Illo, voluptatem.</p>
+
+
+</body>
+</html>

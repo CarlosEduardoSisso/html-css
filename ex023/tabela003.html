@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Para Mesclagem de Células</title>
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        h1 {
+            font-weight: 400;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        tr {
+            background-color: burlywood;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td[rowspan] {
+            background-color: skyblue;
+        }
+
+        td[colspan] {
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td rowspan="2">AF</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td rowspan="5">EJOTY</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td colspan="2">HI</td>
+        </tr>
+        <tr>
+            <td colspan="4">KLMN</td>
+        </tr>
+        <tr>
+            <td colspan="2">PQ</td>
+            <td>R</td>
+            <td>S</td>
+        </tr>
+        <tr>
+            <td>U</td>
+            <td>V</td>
+            <td colspan="2">XW</td>
+        </tr>
+        <tr>
+            <td colspan="5">Z</td>
+        </tr>
+
+    </table>
+</body>
+</html>

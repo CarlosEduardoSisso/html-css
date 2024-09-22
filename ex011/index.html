@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Você pode abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <p>"I Don't Think So"</p>
+    <audio src="midia/I Don't Think So (Original Speed) - The Soundlings.mp3" controls></audio><br>
+    <!--Os formatos compatíveis são MP3, WAV e OGG.-->
+    <p>"Silk Road Melodies"</p>
+    <audio preload="metadata" controls loop>
+        <source src="/midia/Silk road melodies - Patrick Patrikios.mp3" type="audio/mpeg">
+    </audio>
+    <p>Infelizmente, a música "Silk Road Melodies" não está reproduzindo. Ouça-a no seu dispositivo, <a href="midia/Silk road melodies - Patrick Patrikios.mp3" target="_blank" rel="external">clicando aqui</a>.</p>
+</body>
+</html>

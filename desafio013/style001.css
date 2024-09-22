@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 800px;
+}
+
+p {
+    text-indent: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100px;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a#avancar {
+    font-weight: bold;
+}

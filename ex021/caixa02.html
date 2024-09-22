@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkseagreen;
+            margin: 0%;
+        }
+
+
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+
+        nav {
+            background-color: rgb(84, 110, 84);
+            padding: 3px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.589);
+        }
+
+        nav > a {
+            color: darkseagreen;
+            text-decoration: none;
+            margin-right: 50px;
+            
+        }
+
+        a:hover {
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: darkseagreen;
+        }
+
+        h2 {
+            color: rgb(84, 110, 84);
+            text-shadow: 1px 1px 15px rgb(255, 255, 255);
+            padding-left: 10px;
+
+        }
+
+        p {
+            padding: 10px;
+        }
+
+        article > aside {
+            font-style: italic;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+
+        }
+
+        footer > p {
+            margin: 0px;
+            padding: 4px;
+        }
+
+        div#circulo {
+            height: 100px;
+            width: 100px;
+            background-color: azure;
+            margin: 20px auto 20px auto;
+            border-radius: 50%;            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link3</a>
+                <a href="#">Link4</a>
+                <a href="#">Link5</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Assuntos Gerais</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus aliquam alias animi voluptates voluptatum, exercitationem sed sapiente numquam quis cumque laudantium quam omnis ad itaque magni unde. Architecto, nam ipsum!</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium nesciunt quaerat hic debitis iste sapiente? Quis doloremque cumque illum, commodi rem magni optio harum id ut, ipsa, maxime fugiat consectetur.</p>
+                <aside>
+                    <p>Artigo escrito por mim.</p>
+                </aside>
+            </article>
+        </section>
+        <div id="circulo"></div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Carlinhos</p>
+    </footer>
+</body>
+</html>
