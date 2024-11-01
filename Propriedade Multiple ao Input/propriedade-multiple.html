@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando Vários Valores de Entrada</title>
+</head>
+<body>
+    <h1>Adicionando Vários Valores de Entrada</h1>
+    <p id="email"><strong>Digite seus melhores emails:</strong></p>
+    <!--"Multiple" funciona apenas em inputs do tipo 'email' ou 'file'-->
+    <input type="email" name="email" id="txt-email" size="50px" placeholder="Separe os e-mails com vírgula" multiple>
+    <input type="button" value="Submeter" onclick= mostrarSenha()>
+    <p id="demo"></p>
+    <script>
+        const email = document.getElementById('txt-email');
+        function mostrarSenha() {
+            document.getElementById('demo').innerHTML = email.value;
+        }
+    </script>
+</body>
+</html>
